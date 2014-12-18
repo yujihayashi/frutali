@@ -1,5 +1,5 @@
-@primary-color: #812d2a; 
-@secondary-color: #089bdf;  
+@primary-color: #602154; 
+@secondary-color: #929f31;  
 @third-color: #b6967e;  
 /*
 FUNÇÕES PADRÕES START
@@ -28,7 +28,7 @@ NON-RESPONSIVE START
 **********************************************************************************************/
 /* ALTERAR APENAS ESTAS VARIAVEIS DE ACORDO COM O PROJETO START */
 .container {max-width: none !important;width: 960px;}
-.navbar-nav > li > a {padding-top: 15px;padding-bottom:15px;}
+.navbar-nav > li > a {padding-top: 39.5px;padding-bottom:39.5px;}
 /* ALTERAR APENAS ESTAS VARIAVEIS DE ACORDO COM O PROJETO END */
 /* Finesse the page header spacing */.page-header {margin-bottom: 30px;}.page-header .lead {margin-bottom: 10px;}/* Non-responsive overrides** Utilitze the following CSS to disable the responsive-ness of the container,* grid system, and navbar.*//* Reset the container *//* Always float the navbar header */.navbar-header {float: left;}/* Undo the collapsing navbar */.navbar-collapse {display: block !important;height: auto !important;padding-bottom: 0;overflow: visible !important;}.navbar-toggle {display: none;}.navbar-collapse {border-top: 0;}.navbar-brand {margin-left: -15px;}/* Always apply the floated nav */.navbar-nav {float: left;margin: 0;}.navbar-nav > li {float: left;}/* Redeclare since we override the float above */.navbar-nav.navbar-right {float: right;}/* Undo custom dropdowns */.navbar .navbar-nav .open .dropdown-menu {position: absolute;float: left;background-color: #fff;border: 1px solid #cccccc;border: 1px solid rgba(0, 0, 0, 0.15);border-width: 0 1px 1px;border-radius: 0 0 4px 4px;-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);}.navbar-default .navbar-nav .open .dropdown-menu > li > a {color: #333;}.navbar .navbar-nav .open .dropdown-menu > li > a:hover,.navbar .navbar-nav .open .dropdown-menu > li > a:focus,.navbar .navbar-nav .open .dropdown-menu > .active > a,.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {color: #fff !important;background-color: @primary-color !important;}.navbar .navbar-nav .open .dropdown-menu > .disabled > a,.navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,.navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {color: #999 !important;background-color: transparent !important;}
 /**********************************************************************************************
@@ -42,14 +42,36 @@ a, button  {transition: all 0.25s ease 0s;}
 /*
 FONTS START
 **********************************************************************************************/
-.box-chamada {font-family: 'robotoblack', Arial, sans-serif;font-weight: normal;}
+.nav {font-family: 'transat_standardbold', Arial, sans-serif;font-weight: normal;}
 /**********************************************************************************************
 FONTS END
 */
 /*
 ESTRUTURA START
 **********************************************************************************************/
-
+.extra-header {
+	background: url(../imagem/site/bg-header.png) no-repeat center top;height: 131px;
+	.navbar-brand {padding-top:0;}
+	.lang {
+		position: relative;padding-top: 24px;float: left;text-align: center;line-height: 1;margin:0 20px;
+		.nav {width: 38px;height: 38px;position: relative;
+			> li {
+				width: 38px;height: 38px;text-align: center;position: absolute;.border-radius(150px);border:3px solid #dee4e0;left: 0;top: 0;background: #FFF;z-index: 1;
+				> a {
+					padding: 6px 0;
+					&:hover, &:active, &:focus {outline: 0;}
+				}
+				&.active {z-index: 2;}
+			}
+		}
+	}
+	.nav {
+		font-size: 20px;
+		> li {
+			+ li {background: url(../imagem/site/bg-menu-item.png) no-repeat left center;padding-left:6px;}
+		}
+	}
+}
 /**********************************************************************************************
 ESTRUTURA END
 */

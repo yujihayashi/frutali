@@ -1,0 +1,13 @@
+.icon{ background:url("icon.png") top left no-repeat; }
+.icon-atendimento{ width:61px; height:66px; background-position:-1px -1px; }
+.icon-twitter{ width:42px; height:42px; background-position:-1px -68px; }
+.icon-rss{ width:42px; height:42px; background-position:-1px -111px; }
+.icon-facebook{ width:42px; height:42px; background-position:-1px -154px; }
+.icon-home{ width:49px; height:31px; background-position:-1px -197px; }
+.icon-en{ width:28px; height:19px; background-position:-1px -229px; }
+.icon-pt-br{ width:28px; height:19px; background-position:-30px -229px; }
+.icon-es{ width:28px; height:19px; background-position:-1px -249px; }
+.icon-plus-white{ width:13px; height:13px; background-position:-44px -68px; }
+.icon-arrow-right-white{ width:7px; height:12px; background-position:-44px -111px; }
+.icon-arrow-down{ width:12px; height:7px; background-position:-44px -154px; }
+
