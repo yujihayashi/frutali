@@ -8,8 +8,8 @@ $(function() {
     });
     // INTERAÇÃO COM AS BANDEIRAS NO TOPO POR ENQUANTO SÃO ANIMAÇÕES FIXAS
     $('.lang').hover(function () {
-        $(this).find('ul > li:nth-child(2)').stop(true, true).delay(400).animate({top: '40px'}, {duration: 600, queue: true, easing: 'easeInOutExpo'});
-        $(this).find('ul > li:nth-child(3)').stop(true, true).delay(400).animate({top: '80px'}, {duration: 600, queue: true, easing: 'easeInOutExpo'});
+        $(this).find('ul > li:nth-child(2)').stop(true, true).delay(400).animate({top: '34px'}, {duration: 600, queue: true, easing: 'easeInOutExpo'});
+        $(this).find('ul > li:nth-child(3)').stop(true, true).delay(400).animate({top: '68px'}, {duration: 600, queue: true, easing: 'easeInOutExpo'});
     }, function () {
         $(this).find('ul > li:nth-child(2)').stop(true, true).delay(400).animate({top: '0px'}, {duration: 600, queue: true, easing: 'easeInOutExpo'});
         $(this).find('ul > li:nth-child(3)').stop(true, true).delay(400).animate({top: '0px'}, {duration: 600, queue: true, easing: 'easeInOutExpo'});

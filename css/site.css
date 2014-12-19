@@ -116,8 +116,23 @@ button {
 /*
 FONTS START
 **********************************************************************************************/
-.nav {
+.btn,
+.box-curiosidades .box-title,
+.box-receitas .title,
+.nav,
+.footer-header,
+.site-footer,
+.extra-natureza,
+.box-chamadas strong {
   font-family: 'transat_standardbold', Arial, sans-serif;
+  font-weight: normal;
+}
+.box-chamadas {
+  font-family: 'transatstandard', Arial, sans-serif;
+  font-weight: normal;
+}
+.extra-direitos small {
+  font-family: Arial, sans-serif;
   font-weight: normal;
 }
 /**********************************************************************************************
@@ -129,39 +144,48 @@ ESTRUTURA START
 .extra-header {
   background: url(../imagem/site/bg-header.png) no-repeat center top;
   height: 131px;
+  z-index: 110;
+  position: relative;
+}
+.extra-header .navbar {
+  margin: 0;
+  border: 0;
+  padding: 0;
 }
 .extra-header .navbar-brand {
   padding-top: 0;
 }
 .extra-header .lang {
   position: relative;
-  padding-top: 24px;
+  padding-top: 32px;
   float: left;
   text-align: center;
   line-height: 1;
-  margin: 0 20px;
+  margin: 0 5px;
 }
 .extra-header .lang .nav {
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 34px;
   position: relative;
+  padding: 0;
 }
 .extra-header .lang .nav > li {
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 34px;
   text-align: center;
   position: absolute;
-  -webkit-border-radius: 150px;
-  -moz-border-radius: 150px;
-  border-radius: 150px;
-  border: 3px solid #dee4e0;
   left: 0;
   top: 0;
-  background: #FFF;
   z-index: 1;
+  background: #470c2a;
+  padding: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 .extra-header .lang .nav > li > a {
   padding: 6px 0;
+  display: block;
 }
 .extra-header .lang .nav > li > a:hover,
 .extra-header .lang .nav > li > a:active,
@@ -174,9 +198,97 @@ ESTRUTURA START
 .extra-header .nav {
   font-size: 20px;
 }
+.extra-header .nav > li > a {
+  padding: 39.5px 12px;
+}
 .extra-header .nav > li + li {
   background: url(../imagem/site/bg-menu-item.png) no-repeat left center;
   padding-left: 6px;
+}
+.extra-header .nav > li.home > a {
+  padding: 33px 6px;
+}
+.extra-central {
+  margin-top: -31px;
+}
+.extra-natureza {
+  background: url(../imagem/site/bg-natureza.jpg) no-repeat center;
+}
+.extra-natureza .site-natureza {
+  padding: 30px 0;
+  font-size: 35px;
+}
+.extra-natureza,
+.extra-natureza a {
+  color: #a8b938;
+}
+.extra-natureza .destaque {
+  color: #FFF;
+}
+.extra-natureza small {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.extra-natureza .content {
+  text-align: right;
+  padding-left: 300px;
+}
+.extra-footer {
+  background: #602154;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.extra-footer,
+.extra-footer a {
+  color: #FFF;
+}
+.extra-footer .destaque {
+  font-size: 24px;
+}
+.extra-footer .footer-header {
+  color: #4d1944;
+  font-size: 48px;
+  text-transform: lowercase;
+}
+.extra-footer .social-footer {
+  text-align: right;
+  padding: 26px 0;
+}
+.extra-footer .box-contato {
+  background: #a8b938;
+  padding: 15px 30px 15px 15px;
+  position: relative;
+  font-size: 20px;
+}
+.extra-footer .box-contato .media > .pull-left {
+  padding-right: 15px;
+}
+.extra-footer .box-contato .media-body {
+  padding: 10px 0;
+  line-height: 1.1;
+}
+.extra-footer .box-contato .icone {
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  right: 15px;
+}
+.extra-footer .box-endereco .footer-header {
+  padding: 18px 60px 18px 0;
+}
+.extra-footer .box-endereco .media-body {
+  padding-top: 22px;
+}
+.extra-direitos {
+  background: url(../imagem/site/bg-footer.jpg) no-repeat center top;
+}
+.extra-direitos .site-direitos {
+  padding: 30px 0;
+  text-align: center;
+}
+.extra-direitos small {
+  color: #464646;
+  font-size: 10px;
 }
 /**********************************************************************************************
 ESTRUTURA END
@@ -197,10 +309,187 @@ CLASSES START
   background: #EEE;
   color: #C93F2A;
 }
+.btn-lg {
+  font-size: 18px;
+}
+.btn-bloco {
+  min-width: 176px;
+  text-align: left;
+  position: relative;
+  padding-right: 30px;
+}
+.btn-bloco .icone {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -6px;
+}
 .btn-rounded {
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
   border-radius: 150px;
+}
+.box-banner {
+  background: #FFF;
+  position: relative;
+}
+.box-banner,
+.box-banner .cycle-slideshow,
+.box-banner .cycle-slideshow li,
+.box-banner .hit {
+  width: 100%;
+  height: 395px;
+}
+.box-banner .cycle-slideshow {
+  position: relative;
+  z-index: 1;
+}
+.box-banner .cycle-slideshow li {
+  background: no-repeat center top;
+}
+.box-banner .cycle-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.box-banner .cycle-nav span {
+  width: 15px;
+  height: 15px;
+}
+.box-banner .cycle-nav .container {
+  position: relative;
+}
+.box-banner .cycle-nav .content {
+  position: absolute;
+  left: 40px;
+  bottom: 20px;
+}
+.box-banner .hit {
+  display: block;
+}
+.box-chamadas {
+  padding: 15px 0;
+  background: url(../imagem/site/bg-wood.jpg) no-repeat center bottom;
+}
+.box-chamadas .chamada {
+  background: #94a132;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 109px;
+  font-size: 20px;
+  line-height: 1;
+}
+.box-chamadas .chamada strong {
+  font-size: 28px;
+  display: block;
+}
+.box-chamadas .chamada,
+.box-chamadas .chamada a {
+  color: #FFF;
+}
+.box-chamadas .chamada .pull-left {
+  padding-right: 20px;
+}
+.box-chamadas .chamada .media-body {
+  padding-top: 26px;
+}
+.box-dicas {
+  background: url(../imagem/site/bg-purple.jpg) no-repeat center top;
+  padding: 30px 0 20px;
+}
+.box-receitas {
+  position: relative;
+}
+.box-receitas,
+.box-receitas .cycle-slideshow,
+.box-receitas .cycle-slideshow li,
+.box-receitas .cycle-slideshow .content {
+  width: 100%;
+  height: 268px;
+}
+.box-receitas .cycle-slideshow {
+  position: relative;
+  z-index: 1;
+}
+.box-receitas .cycle-slideshow li .content {
+  background: #FFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.box-receitas .cycle-nav {
+  position: absolute;
+  left: 20px;
+  bottom: 14px;
+  z-index: 2;
+}
+.box-receitas .imagem {
+  display: block;
+  height: 100px;
+  overflow: hidden;
+}
+.box-receitas .title,
+.box-receitas .desc {
+  padding: 8px 15px;
+}
+.box-receitas .title {
+  font-size: 16px;
+  text-transform: uppercase;
+  display: block;
+  background: #eeeeed;
+}
+.box-receitas .desc {
+  color: #1b1919;
+}
+.box-receitas .button {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: url(../imagem/site/bg-canto.png) no-repeat left top;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  padding: 34px 15px 6px 0;
+  text-align: right;
+}
+.box-curiosidades {
+  color: #FFF;
+  padding-top: 40px;
+  padding-right: 15px;
+}
+.box-curiosidades .pull-left {
+  padding-right: 30px;
+}
+.box-curiosidades .media-body {
+  text-align: justify;
+}
+.box-curiosidades .box-title {
+  color: #a8b938;
+  font-size: 35px;
+}
+.cycle-nav span {
+  display: inline-block;
+  cursor: pointer;
+  background: #929f31;
+  text-indent: -1000px;
+  overflow: hidden;
+  width: 9px;
+  height: 9px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+.cycle-nav span.cycle-pager-active {
+  background: #602154;
+}
+.cycle-nav span + span {
+  margin-left: 5px;
 }
 .imagem {
   display: inline-block;
